@@ -18,7 +18,6 @@ public class Shoot : MonoBehaviour
     public void Fire()
     {
         projectile = poolManager.AccesList();
-        Debug.Log(projectile.name);
         projectile.tag = gameObject.tag;
         projectile.GetComponent<Projectile>().targetTag = gameObject.tag;
         projectile.transform.position = shootpoint.position;
